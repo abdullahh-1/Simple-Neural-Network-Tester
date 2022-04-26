@@ -11,4 +11,4 @@ if __name__ == '__main__':
     for i in range(data_count):
         predicted.append(nn.NeuralNetwork(inputs[i], layer_1, layer_2))
 
-    print(nn.Accuracy(predicted, actual))
+    print("Match Accuracy: ", nn.Accuracy(predicted, actual))

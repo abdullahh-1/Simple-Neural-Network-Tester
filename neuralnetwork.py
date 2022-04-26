@@ -62,9 +62,9 @@ def Accuracy(predicted, actual):     # returns % of matches
     total = 0
 
     for i in range(len(actual)):
-        if predicted[i] == actual[i]:
+        if predicted[i] == float(actual[i]):
             matches += 1
         total += 1
 
-    return 100 * (matches / total)
+    return round(100 * (matches / total), 4)
 
